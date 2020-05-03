@@ -1,11 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
+import{routing, appRoutingProviders} from'./app.routing';
 
 import { AppComponent } from './app.component';
 import {TiendaComponet} from './components/tienda/tienda.component';
 import {ParquesComponet} from './components/parques/parques.component' ;
+import {AnimalsComponent} from './components/animals/animals.component' ;
+import {ContactComponent} from './components/contact/contact.component';
+import {HomeComponent} from './components/home/home.component';
+import{KeepersComponent} from './components/keepers/keepers.component';
+
+import { from } from 'rxjs';
   
 
 @NgModule({
@@ -13,12 +19,19 @@ import {ParquesComponet} from './components/parques/parques.component' ;
     AppComponent,
     TiendaComponet,
     ParquesComponet,
+    AnimalsComponent,
+    ContactComponent,
+    HomeComponent,
+    KeepersComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    routing,
   ],
-  providers: [],
+  providers: [
+    appRoutingProviders
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
