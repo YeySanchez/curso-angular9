@@ -1,10 +1,12 @@
 <h1>{{title}}</h1>
 <!--<tienda></tienda>-->
-<a [routerLink]= "['/home']">  Inicio </a>
-<a [routerLink]= "['/animales']"> Animales</a>
-<a [routerLink]= "['/contactos']"> Contactos</a>
-<a [routerLink]= "['/cuidadores']"> Cuidadores</a>
-<a [routerLink]= "['/tienda']"> Tienda</a>
+<a [routerLink]= "['/home']">  Inicio </a> &nbsp;
+<a [routerLink]= "['/animales']"> Animales</a> &nbsp;
+<a [routerLink]= "['/contactos']"> Contactos</a> &nbsp;
+<a [routerLink]= "['/cuidadores']"> Cuidadores</a> &nbsp;
+<a [routerLink]= "['/tienda']"> Tienda</a> &nbsp;
+<!--motrar datos (pso3) mostar datos al lado de nuestra barra de navegacion-->
+<span *ngIf= "emailContacto"><strong>Email de contacto </strong> {{emailContacto}}</span>
 <hr>
 
 <router-outlet></router-outlet>
