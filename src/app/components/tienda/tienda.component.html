@@ -12,7 +12,20 @@ Nombre del parque
 Resultado {{NombreDelParque}}
 <br/>
 </p>
+<div *ngIf="Miparque">
+    <h4>DATOS DE MI PARQUE DESDE EL HIJO</h4>
+    <ol>
+        <li>{{Miparque.nombre}}</li>
+        <li>{{Miparque.metros}}</li>
+        <li>{{Miparque.vegetacion}}</li>
+        <li>{{Miparque.abierto}}</li>
+
+    </ol>
+</div>
+<hr/>
 <p *ngIf="NombreDelParque">
 hijo 
-<parques [nombre] = "NombreDelParque" [metros_cuadrados] = "1000"></parques>
+<parques [nombre] = "NombreDelParque" [metros_cuadrados] = "1000"
+(pasameLosDatos)="verDatosParque($event)"
+></parques>
 </p>
