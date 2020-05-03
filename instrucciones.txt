@@ -1,0 +1,31 @@
+En este capitulo aprendimos a utilizar un elemento de un componete e implantarlo en otro 
+
+ademas aprendimos variables tipo number y boolean 
+ejemplo 
+en el ts 
+
+public metros: number;
+public abierto: boolean;
+//en  el constructor
+
+constructos{
+this.metros = 450;
+this.abierto = true;
+}
+
+en el codigo html 
+
+<span *ngIf ="abierto == true"Abierto"></span>
+
+<span *ngIf ="abierto != true"cerrado"></span>
+
+ngIf = a una condicion 
+
+== es igual 
+!= es diferente 
+
+en tienda.component.html 
+
+utilizamos el selector parques para utilizar todos estos elemtos en la pagina 
+
+<parques></parques>
