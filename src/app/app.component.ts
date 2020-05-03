@@ -24,4 +24,11 @@ export class AppComponent implements DoCheck,OnInit {
    this.emailContacto =localStorage.getItem('emailContacto');
 
   }
+  //metodo eliminaremail removeItem
+  Eeliminarcontacto(){
+    localStorage.removeItem('emailContacto');
+    //vaciar la cache de la consola 
+    localStorage.clear();
+    this.emailContacto = null
+  }
 }
