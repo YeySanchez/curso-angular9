@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 
 @Component({
     selector:'parques',
@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
     styleUrls: ['./parques.component.css'],
   })
   export class ParquesComponet {
-    public metros: number;
-    public nombre: string;
+    @Input('metros_cuadrados') metros: number;
+    @Input() nombre: string;
     public vegetacion: string;
     public abierto: boolean;
 
