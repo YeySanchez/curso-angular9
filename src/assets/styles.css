@@ -1,6 +1,10 @@
-body{
-   background: #eee !important ; 
-}
+
 .navigation.col-lg-12{
 margin-top: 10px;
+}
+/*agregando estilos al jumbotron de home*/
+.jumbotron{
+   padding: 40px;
+   border-radius:10px ;
+   box-shadow:0p 0px 3px #cccccc ;
 }
