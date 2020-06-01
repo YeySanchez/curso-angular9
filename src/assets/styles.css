@@ -8,3 +8,6 @@ margin-top: 10px;
    border-radius:10px ;
    box-shadow:0p 0px 3px #cccccc ;
 }
+.navbar-nav .active{
+   border-bottom: 3px solid blue;
+}
