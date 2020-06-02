@@ -20,6 +20,7 @@ declare var $:any;
         console.log('click desde jquery')
         $('#textojq').slideToggle();
       });
+      $("#caja").dotdotdot({});
     }
     MostrarNombre(){
       console.log(this.NombreDelParque);
