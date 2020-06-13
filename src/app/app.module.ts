@@ -3,6 +3,10 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import{routing, appRoutingProviders} from'./app.routing';
 
+// IMPORTAR MODULO ModuloEmailModule//
+
+import {ModuloEmailMoule} from './moduloemail/moduloemail.module'
+
 import { AppComponent } from './app.component';
 import {TiendaComponet} from './components/tienda/tienda.component';
 import {ParquesComponet} from './components/parques/parques.component' ;
@@ -28,6 +32,7 @@ import { from } from 'rxjs';
     BrowserModule,
     FormsModule,
     routing,
+    ModuloEmailMoule
   ],
   providers: [
     appRoutingProviders
