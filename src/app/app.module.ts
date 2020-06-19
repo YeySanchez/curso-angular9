@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import{routing, appRoutingProviders} from'./app.routing';
 
 // IMPORTAR MODULO ModuloEmailModule//
-
+import {AdminModule} from './admin/admin.module';
 import {ModuloEmailMoule} from './moduloemail/moduloemail.module'
 
 import { AppComponent } from './app.component';
@@ -15,8 +15,7 @@ import {ContactComponent} from './components/contact/contact.component';
 import {HomeComponent} from './components/home/home.component';
 import{KeepersComponent} from './components/keepers/keepers.component';
 
-import { from } from 'rxjs';
-  
+
 
 @NgModule({
   declarations: [
@@ -32,7 +31,8 @@ import { from } from 'rxjs';
     BrowserModule,
     FormsModule,
     routing,
-    ModuloEmailMoule
+    ModuloEmailMoule,
+    AdminModule
   ],
   providers: [
     appRoutingProviders
