@@ -45,13 +45,16 @@ margin-top: 10px;
    border: 5px solid black;
    width: 200px;
    height: 200px;
-
+   
    /*crear animaciones con csss3 paso 1*/
+   /*
    animation-name: deslizamiento;
    animation-name: rotacion;
    animation-duration: 20s;
-   /*Para que la animacion sea infinita utilizamos la digente propiedad*/
+   Para que la animacion sea infinita utilizamos la digente propiedad
    animation-iteration-count: infinite;
+   */
+   
 
 }
 /*prpiedad de rotacion*/

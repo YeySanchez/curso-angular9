@@ -1,7 +1,20 @@
+
+<!--video 35  crear trasiciones en angular -->
+<a class="boton_activo btn btn-success" 
+[@marcar]="status" (click)= "CambiarEstado(status)">
+<span *ngIf="status == 'inactive'">Boton inactivo</span>
+<span *ngIf="status == 'active'">Boton activo</span>
+</a>
+<!--fin de transiciones v35-->
+
+
+<hr>
+<h4>Animaciones css3</h4>
 <a class="boton_transiciones">Transiciones</a>
 <!--el siguiente div es para generar un espacio entre la caja y el btn-->
 <div class="clearfix"></div>
 <div class="caja_animada"></div>
+<!--fin de ejemplo animaciines css3-->
 <hr>
 <h4>Utilizar Jquerry dentro de angular</h4>
 <button id="botonjq">Mostrar textos</button>
