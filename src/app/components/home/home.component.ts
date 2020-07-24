@@ -1,12 +1,12 @@
 import { Component,OnInit} from '@angular/core';
 //importar componente que creamos en animation.ts
-import {fundido} from '../animation';
+import {fadeIn} from '../animation';
 
 @Component({
   selector: 'home',
   templateUrl: './home.component.html',
   //traer el atributo animation
-  animations: [fundido]
+  animations: [fadeIn]
   
 })
 export class HomeComponent implements OnInit{

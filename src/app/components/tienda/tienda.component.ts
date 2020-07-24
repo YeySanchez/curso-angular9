@@ -1,6 +1,7 @@
 import { Component,OnInit } from '@angular/core';
 //importar librerarias para crerar transiciones en angular v35
 import { trigger, state, style, transition, animate} from '@angular/animations';
+import {fadeIn} from '../animation';
 
 //declare var jQuery:any;
 //declare var $:any;
@@ -24,7 +25,8 @@ import { trigger, state, style, transition, animate} from '@angular/animations';
           })),
           transition('inactive => active',[animate('3s linear')]),
           transition('active => inactive',[animate('3s linear')])
-      ])
+      ]),
+      fadeIn
 
     ]
     //fin del array
