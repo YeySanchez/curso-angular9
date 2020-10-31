@@ -7,6 +7,8 @@ import {AnimalsComponent} from './components/animals/animals.component' ;
 import {ContactComponent} from './components/contact/contact.component';
 import {HomeComponent} from './components/home/home.component';
 import{KeepersComponent} from './components/keepers/keepers.component';
+import{RegisterComponent}from './components/register/register.component';
+import{LoginComponenent} from './components/login/login.component';
 
 //amos a crear un array para nuestreo areglo 
 const appRoutes: Routes =[//array de rutas
@@ -16,6 +18,8 @@ const appRoutes: Routes =[//array de rutas
     {path:'animales', component: AnimalsComponent},
     {path: 'contactos',component: ContactComponent},
     {path: 'cuidadores',component: KeepersComponent},
+    {path: 'Registro',component: RegisterComponent},
+    {path: 'login',component: LoginComponenent},
     {path:'tienda',component:TiendaComponet},
     {path:'**', component: HomeComponent}//por si escriben mal la url te direccione a tienda
 ];//finarray

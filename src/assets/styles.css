@@ -9,10 +9,15 @@ margin-top: 10px;
    box-shadow:0p 0px 3px #cccccc ;
 }
 .navbar-nav .active{
-   border-bottom: 3px solid blue;
+   border-bottom: 3px solid blue !important;
 
 
 }
+.navbar-default .navbar-nav>li>a{
+   transition: all 300ms;
+   border-bottom: 3px solid transparent;
+}
+
 .navbar-default .navbar-nav>li>a:hover{
    transform: all 300ms;
    border-bottom: 3px solid blue;

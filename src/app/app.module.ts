@@ -15,6 +15,9 @@ import {AnimalsComponent} from './components/animals/animals.component' ;
 import {ContactComponent} from './components/contact/contact.component';
 import {HomeComponent} from './components/home/home.component';
 import{KeepersComponent} from './components/keepers/keepers.component';
+import{RegisterComponent}from './components/register/register.component';
+import{LoginComponenent} from './components/login/login.component';
+
 import { from } from 'rxjs';
 
 
@@ -27,7 +30,10 @@ import { from } from 'rxjs';
     AnimalsComponent,
     ContactComponent,
     HomeComponent,
-    KeepersComponent
+    KeepersComponent,
+    RegisterComponent,
+    LoginComponenent
+
   ],
   imports: [
     BrowserModule,
