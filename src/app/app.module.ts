@@ -2,7 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import{routing, appRoutingProviders} from'./app.routing';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 // IMPORTAR MODULO ModuloEmailModule//
 import {AdminModule} from './admin/admin.module';
 import {ModuloEmailMoule} from './moduloemail/moduloemail.module'
@@ -41,7 +42,8 @@ import { from } from 'rxjs';
     routing,
     BrowserAnimationsModule,
     ModuloEmailMoule,
-    AdminModule
+    AdminModule,
+    HttpClientModule
     
   ],
   providers: [
